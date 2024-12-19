@@ -1,0 +1,110 @@
+header {
+    min-height: 100vh;
+    background-image: url(../images/bg\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: cursive;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+
+.todo-title{
+    
+    width: 100%;
+    min-width: 300px;
+    max-width: 550px;
+    margin: auto;
+    background-image: linear-gradient(45deg,#6a6969fa 25%, #a2c0bcda);
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+}
+.todo-title img {
+    width: 60px;
+    height: 60px;
+}
+
+.todo-title .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 214, 215);
+    max-width: 95%;
+    margin: auto;
+    border-radius: 22px;
+
+}
+.todo-title .row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.todo-title .row button {
+    width: 110px;
+    padding: 9px;
+}
+
+ul li {
+    width: 90%;
+    list-style: none;
+    user-select: none;
+    padding: 10px 8px 6px 40px;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+}
+
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 50%;
+    top: 18px;
+    left: 5px;
+}
+
+ul li.cheked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.cheked::before{
+    background-image: url(../images/Flat\ Round\ Check.jpeg);
+    background-size: contain;
+}
+
+ul li span {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -15px;
+    top: 15px;
+    border-radius: 50%;
+}
+ul li span:hover {
+    scale: 1.3;
+    
+}
+@media (max-width: 768px){
+    header {
+        background-image: url(../images/5.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .todo-title{
+        background-image: linear-gradient(45deg,#818181e6 25%, #ced6d5);
+    }
+    .btn {
+        background-color: rgb(129, 127, 127);
+        border: solid 1px rgb(129, 127, 127);
+
+    }
+
+}
